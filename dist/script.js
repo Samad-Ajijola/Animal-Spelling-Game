@@ -15,7 +15,7 @@ const images = [
     { src: './images/monkey.jpeg', word: 'MONKEY' }
 ];
 
-const MAX_WORDS = 3; // Limit the game to 5 words
+const MAX_WORDS = 5; // Limit the game to 5 words
 
 let currentImageIndex = 0;
 let currentWord = '';

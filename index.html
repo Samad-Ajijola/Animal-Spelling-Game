@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Spelling Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-blue-50 text-center">
+    <header class="bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 text-white py-5">
+        <h1 class="text-4xl font-bold">Animal Spelling Game!</h1>
+    </header>
+    <div id="image-container" class="my-5">
+        <img id="current-image" src="" alt="Spelling Image" class="mx-auto max-w-xs">
+        <div id="timer" class="text-4xl font-bold my-5">60</div>
+    </div>
+    <div id="spelling-boxes" class="text-5xl my-5 h-10 flex justify-center space-x-2"></div>
+    <div id="alphabet-container" class="grid grid-cols-7 gap-3 mx-5"></div>
+
+    <!-- Control Buttons Section -->
+    <div id="control-buttons" class="my-5">
+        <button id="clear-button" class="bg-red-500 text-black py-2 px-4 rounded hover:bg-orange-700 mx-2">Clear</button>
+        <button id="submit-button" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-700 mx-2 hidden">Submit</button>
+    </div>
+
+    <!-- Feedback Section -->
+    <div id="feedback-section" class="hidden text-2xl font-semibold my-5"></div>
+    
+    <!-- Next Button -->
+    <button id="next-button" class="hidden bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Next</button>
+
+    <!-- End Game Section -->
+    <div id="end-game-section" class="hidden mt-10">
+        <h2 class="text-2xl font-semibold">Game Over!</h2>
+        <button id="restart-button" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-700 mx-2">Restart</button>
+        <button id="quit-button" class="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-700 mx-2">Quit</button>
+    </div>
+
+    <div id="report-section" class="hidden mt-10">
+        <h2 class="text-2xl font-semibold">Result</h2>
+        <ul id="report-list" class="list-none p-0 mt-3"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
